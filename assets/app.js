@@ -145,7 +145,7 @@ const SLIDES = [
         <ul class="bullets" data-step style="--d:3">
           <li><span>Ordentliche Mitgliedschaft <strong>ab 24&nbsp;€ im Jahr</strong></span></li>
           <li><span>Fördermitgliedschaft <strong>ab 42&nbsp;€ im Jahr</strong>, für Vereine ab 50&nbsp;€, für Unternehmen ab 100&nbsp;€</span></li>
-          <li><span>Beitrittserklärung online ausfüllen, als PDF speichern, unterschrieben einreichen</span></li>
+          <li><span>Beitrittserklärung online ausfüllen, als PDF speichern und unterschrieben an <strong>mitgliedsantrag@openzirndorf.de</strong> senden</span></li>
         </ul>
       </div>
       <div class="cta-qr" data-step style="--d:2"><img src="assets/qr/beitritt.svg" alt="QR-Code zur Beitrittserklärung" /><span>Scannen &amp; beitreten</span></div>
