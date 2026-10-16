@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OpenZirndorf – Handzettel</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <style>
+    @page { size: A4; margin: 0; }
+    body { background: #E5E7EB; font-size: 11pt; }
+    .sheet {
+      width: 210mm; min-height: 297mm; margin: 12mm auto; background: #fff; padding: 16mm 16mm 12mm;
+      display: flex; flex-direction: column; gap: 8mm; box-shadow: var(--shadow-lg);
+    }
+    .head { display: flex; align-items: center; gap: 8mm; }
+    .head img { width: 34mm; }
+    .head h1 { font-size: 22pt; font-weight: 800; margin: 1mm 0 2mm; }
+    .head p { color: var(--ink-2); }
+    .main-qr { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5mm; }
+    .main-qr div, .app-qr div { border: 1px solid var(--line); border-radius: 4mm; padding: 4mm; text-align: center; display: flex; flex-direction: column; gap: 1.5mm; align-items: center; }
+    .main-qr img { width: 40mm; }
+    .main-qr strong { font-family: var(--font-head); font-size: 12pt; }
+    .main-qr span, .app-qr span { color: var(--ink-3); font-size: 8.5pt; line-height: 1.35; }
+    h2 { font-size: 13pt; }
+    .app-qr { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3mm; }
+    .app-qr img { width: 25mm; }
+    .app-qr strong { font-size: 9.5pt; line-height: 1.25; }
+    .foot { margin-top: auto; display: flex; justify-content: space-between; color: var(--ink-3); font-size: 8.5pt; border-top: 1px solid var(--line); padding-top: 3mm; }
+    .print-hint { text-align: center; margin: 12mm auto 0; }
+    @media print {
+      body { background: #fff; }
+      .sheet { margin: 0; box-shadow: none; }
+      .print-hint { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <p class="print-hint"><button class="btn btn-primary" type="button" onclick="print()">Drucken</button></p>
+  <article class="sheet">
+    <header class="head">
+      <img src="assets/img/logo.png" alt="OpenZirndorf" />
+      <div>
+        <p class="eyebrow">OpenZirndorf e.V.</p>
+        <h1>Digitale Möglichkeiten für Zirndorf.</h1>
+        <p>Wir sind ein ehrenamtlicher, überparteilicher Verein von Bürgerinnen und Bürgern aus Zirndorf und bauen kostenlose digitale Werkzeuge für unsere Stadt. Open Source, für alle offen.</p>
+      </div>
+    </header>
+
+    <section class="main-qr">
+      <div><img src="assets/qr/workshop.svg" alt="" /><strong>OpenZirndorf-Workshop</strong><span>Unverbindlich Interesse anmelden, wir melden uns mit Termin und Details.</span></div>
+      <div><img src="assets/qr/beitritt.svg" alt="" /><strong>Mitglied werden</strong><span>Ab 24 € im Jahr, Fördermitgliedschaft ab 42 €. Beitrittserklärung online.</span></div>
+      <div><img src="assets/qr/website.svg" alt="" /><strong>openzirndorf.de</strong><span>Projekte, Termine, Presse, Satzung und Kontakt.</span></div>
+    </section>
+
+    <section>
+      <h2>Unsere Projekte</h2>
+    </section>
+    <section class="app-qr">
+      <div><img src="assets/qr/mobil.svg" alt="" /><strong>Zirndorf Mobil</strong><span>Busse &amp; Bahnen live</span></div>
+      <div><img src="assets/qr/ideen.svg" alt="" /><strong>Ideenbörse</strong><span>Ideen für Zirndorf</span></div>
+      <div><img src="assets/qr/wahl2026.svg" alt="" /><strong>Wahlanalyse 2026</strong><span>Kommunalwahl verständlich</span></div>
+      <div><img src="assets/qr/garagenflohmarkt.svg" alt="" /><strong>Garagenflohmarkt</strong><span>Rückblick 2026</span></div>
+      <div><img src="assets/qr/erfahre.svg" alt="" /><strong>Erfahre Zirndorf</strong><span>Fahrrad-Aktion 2026</span></div>
+      <div><img src="assets/qr/sommerdetektive.svg" alt="" /><strong>Sommerdetektive</strong><span>Rätsel-Stadtrallye 2026</span></div>
+      <div><img src="assets/qr/bad.svg" alt="" /><strong>Bibertbad Digital</strong><span>Aprilscherz 2026</span></div>
+      <div><img src="assets/qr/instagram.svg" alt="" /><strong>@openzirndorf</strong><span>Instagram</span></div>
+    </section>
+
+    <section>
+      <h2>Lerne uns kennen</h2>
+      <p style="margin-top:2mm">Nächster Stammtisch: <strong>Montag, 9. November 2026, 19:00 Uhr</strong>, Hotel Knorz, Zirndorf. Unverbindlich, alle sind willkommen.</p>
+    </section>
+
+    <footer class="foot">
+      <span>OpenZirndorf e.V. · team@openzirndorf.de</span>
+      <span>openzirndorf.de</span>
+    </footer>
+  </article>
+</body>
+</html>

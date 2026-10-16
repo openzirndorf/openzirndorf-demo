@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>OpenZirndorf e.V. – Herbstmarkt</title>
+  <meta name="description" content="OpenZirndorf e.V. am Herbstmarkt Zirndorf: unsere Projekte, der Verein und wie du mitmachen kannst." />
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <!-- ===== Kopfzeile ===== -->
+  <header class="topbar">
+    <a class="brand" href="#start" aria-label="Zur Startseite">
+      <img src="assets/img/logo.png" alt="" class="brand-logo" />
+      <span class="brand-text"><span class="brand-open">Open</span>Zirndorf <span class="brand-ev">e.V.</span></span>
+    </a>
+    <nav class="tabs" aria-label="Bereiche">
+      <a href="#start" data-nav="start">Projekte</a>
+      <a href="#verein" data-nav="verein">Der Verein</a>
+      <a href="#mitmachen" data-nav="mitmachen">Mitmachen</a>
+    </nav>
+    <div class="topbar-actions">
+      <span class="net-status" id="net-status" hidden>Offline</span>
+      <button class="icon-btn" id="btn-fullscreen" type="button" aria-label="Vollbild" title="Vollbild (F)">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Start / Projekte ===== -->
+    <section class="view" id="view-start" data-view="start">
+      <div class="hero container">
+        <div class="hero-text">
+          <p class="eyebrow">Herbstmarkt Zirndorf · 18. Oktober 2026</p>
+          <h1>Digitale Möglichkeiten <span class="accent">für Zirndorf.</span></h1>
+          <p class="lead">
+            OpenZirndorf e.V. ist ein ehrenamtlicher, überparteilicher Verein von Bürgerinnen und Bürgern aus Zirndorf.
+            Wir bauen kostenlose digitale Werkzeuge, die das Leben in der Stadt einfacher und lokale Politik verständlicher machen.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="#mitmachen/workshop">Interesse am Workshop</a>
+            <a class="btn btn-secondary btn-lg" href="#mitmachen/beitritt">Mitglied werden</a>
+            <a class="btn btn-ghost btn-lg" href="#verein">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+              Präsentation ansehen
+            </a>
+          </div>
+        </div>
+        <div class="hero-facts" aria-label="Kurz und knapp">
+          <div class="fact"><strong>7</strong><span>digitale Projekte seit Anfang 2026</span></div>
+          <div class="fact"><strong>100&nbsp;%</strong><span>ehrenamtlich, ohne Gewinninteresse</span></div>
+          <div class="fact"><strong>0&nbsp;€</strong><span>alle Angebote kostenlos für alle</span></div>
+          <div class="fact"><strong>e.V.</strong><span>eingetragener Verein seit August 2026</span></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="section-head">
+          <h2>Unsere Projekte</h2>
+          <p>Tippe auf ein Projekt, um es hier direkt auszuprobieren, oder nimm es per QR-Code auf dein Handy mit.</p>
+        </div>
+        <div class="app-grid" id="app-grid"></div>
+      </div>
+
+      <div class="container">
+        <a class="website-strip" href="https://openzirndorf.de/" target="_blank" rel="noopener">
+          <span>
+            <strong>Alles über uns auf openzirndorf.de</strong>
+            <span>Termine, Presse, Satzung und Kontakt</span>
+          </span>
+          <img src="assets/qr/website.svg" alt="QR-Code zu openzirndorf.de" class="qr-sm" />
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== Der Verein (Präsentation) ===== -->
+    <section class="view view-deck" id="view-verein" data-view="verein" hidden>
+      <div class="deck" id="deck" tabindex="-1" aria-roledescription="Präsentation">
+        <div class="deck-progress" id="deck-progress"></div>
+        <div class="deck-slides" id="deck-slides"></div>
+        <div class="deck-controls">
+          <button class="icon-btn" type="button" id="deck-prev" aria-label="Vorherige Folie">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+          </button>
+          <button class="icon-btn" type="button" id="deck-play" aria-label="Automatisch abspielen anhalten">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="i-pause"><path d="M9 6v12M15 6v12"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="i-play"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <span class="deck-count" id="deck-count"></span>
+          <button class="icon-btn" type="button" id="deck-next" aria-label="Nächste Folie">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Mitmachen ===== -->
+    <section class="view" id="view-mitmachen" data-view="mitmachen" hidden>
+      <div class="container">
+        <div class="section-head section-head--page">
+          <p class="eyebrow">Mitmachen</p>
+          <h2>Werde Teil von OpenZirndorf</h2>
+          <p>Am einfachsten scannst du die QR-Codes mit deinem Handy. So bleiben deine Angaben auf deinem eigenen Gerät.</p>
+        </div>
+
+        <div class="join-grid">
+          <article class="join-card" id="join-workshop">
+            <div class="join-body">
+              <p class="eyebrow">Workshop</p>
+              <h3>OpenZirndorf-Workshop</h3>
+              <p>Du willst sehen, wie unsere Projekte entstehen, oder selbst mitmachen? Melde unverbindlich dein Interesse an, wir melden uns mit Termin und Details.</p>
+              <ul class="bullets"><li>Unverbindlich und kostenlos</li><li>Keine Vorkenntnisse nötig</li></ul>
+              <a class="btn btn-primary" href="https://cloud.openzirndorf.de/apps/forms/s/ePZrgLFCN8yTWiALWjcYabMz" target="_blank" rel="noopener">Interesse anmelden</a>
+            </div>
+            <figure class="join-qr">
+              <img src="assets/qr/workshop.svg" alt="QR-Code zur Interessenanmeldung für den Workshop" />
+              <figcaption>Scannen &amp; anmelden</figcaption>
+            </figure>
+          </article>
+
+          <article class="join-card" id="join-beitritt">
+            <div class="join-body">
+              <p class="eyebrow">Mitgliedschaft</p>
+              <h3>Mitglied werden</h3>
+              <ul class="price-list">
+                <li><span>Ordentliche Mitgliedschaft, mit Stimmrecht</span><strong>ab 24&nbsp;€/Jahr</strong></li>
+                <li><span>Fördermitgliedschaft Privatpersonen</span><strong>ab 42&nbsp;€/Jahr</strong></li>
+                <li><span>Vereine und Organisationen</span><strong>ab 50&nbsp;€/Jahr</strong></li>
+                <li><span>Unternehmen</span><strong>ab 100&nbsp;€/Jahr</strong></li>
+              </ul>
+              <p class="fine">Online ausfüllen, als PDF speichern und unterschrieben per E-Mail oder Post einreichen. Deine Eingaben bleiben dabei in deinem Browser.</p>
+              <a class="btn btn-secondary" href="https://openzirndorf.de/beitritt/" target="_blank" rel="noopener">Beitrittserklärung öffnen</a>
+            </div>
+            <figure class="join-qr">
+              <img src="assets/qr/beitritt.svg" alt="QR-Code zur Beitrittserklärung" />
+              <figcaption>Scannen &amp; beitreten</figcaption>
+            </figure>
+          </article>
+
+          <article class="join-card" id="join-website">
+            <div class="join-body">
+              <p class="eyebrow">Webseite</p>
+              <h3>openzirndorf.de</h3>
+              <p>Alles über den Verein an einem Ort:</p>
+              <ul class="bullets"><li>Projekte und nächste Termine</li><li>Presseberichte</li><li>Satzung und Beitragsordnung</li><li>Kontakt und Impressum</li></ul>
+              <a class="btn btn-ghost" href="https://openzirndorf.de/" target="_blank" rel="noopener">Webseite öffnen</a>
+            </div>
+            <figure class="join-qr">
+              <img src="assets/qr/website.svg" alt="QR-Code zu openzirndorf.de" />
+              <figcaption>openzirndorf.de</figcaption>
+            </figure>
+          </article>
+        </div>
+
+        <div class="more-grid">
+          <div class="more-card">
+            <p class="eyebrow">Kennenlernen</p>
+            <h3>Nächster Stammtisch</h3>
+            <p><strong>Mo, 9. November 2026, 19:00 Uhr</strong><br />Hotel Knorz, Zirndorf</p>
+            <p class="fine">Unverbindlich, alle sind willkommen.</p>
+          </div>
+          <div class="more-card more-card--qr">
+            <div>
+              <p class="eyebrow">Deine Idee</p>
+              <h3>Ideenbörse</h3>
+              <p>Was fehlt dir in Zirndorf? Reiche deine Idee ein oder stimme für andere ab.</p>
+            </div>
+            <img src="assets/qr/ideen.svg" alt="QR-Code zur Ideenbörse" class="qr-sm" />
+          </div>
+          <div class="more-card more-card--qr">
+            <div>
+              <p class="eyebrow">Auf dem Laufenden bleiben</p>
+              <h3>@openzirndorf</h3>
+              <p>Instagram, Facebook und per E-Mail an <strong>team@openzirndorf.de</strong></p>
+            </div>
+            <img src="assets/qr/instagram.svg" alt="QR-Code zu Instagram" class="qr-sm" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <span>OpenZirndorf e.V. · Digitale Möglichkeiten für Zirndorf</span>
+    <span class="footer-links">
+      <a href="https://openzirndorf.de/impressum.html" target="_blank" rel="noopener">Impressum</a>
+      <a href="https://openzirndorf.de/datenschutz.html" target="_blank" rel="noopener">Datenschutz</a>
+      <a href="handzettel.html" target="_blank" rel="noopener">Handzettel drucken</a>
+    </span>
+  </footer>
+
+  <!-- ===== App-Ansicht ===== -->
+  <div class="viewer" id="viewer" hidden role="dialog" aria-modal="true" aria-labelledby="viewer-title">
+    <div class="viewer-bar">
+      <button class="btn btn-back" type="button" id="viewer-close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+        Zurück zur Übersicht
+      </button>
+      <div class="viewer-title">
+        <strong id="viewer-title"></strong>
+        <span id="viewer-url"></span>
+      </div>
+      <div class="viewer-actions">
+        <button class="btn btn-ghost btn-sm" type="button" id="viewer-reload">Neu laden</button>
+        <a class="btn btn-ghost btn-sm" id="viewer-open" href="#" target="_blank" rel="noopener">Im Browser öffnen</a>
+      </div>
+    </div>
+    <div class="viewer-stage">
+      <div class="viewer-frame-wrap" id="viewer-frame-wrap"></div>
+      <aside class="viewer-side">
+        <p class="eyebrow" id="viewer-status"></p>
+        <p id="viewer-desc"></p>
+        <figure class="join-qr join-qr--side" id="viewer-qr-fig">
+          <img id="viewer-qr" src="" alt="" />
+          <figcaption>Auf dem eigenen Handy öffnen</figcaption>
+        </figure>
+      </aside>
+    </div>
+  </div>
+
+  <!-- ===== Noch da? ===== -->
+  <div class="idle-prompt" id="idle-prompt" hidden role="alertdialog" aria-labelledby="idle-title">
+    <div class="idle-card">
+      <h3 id="idle-title">Noch da?</h3>
+      <p>Die Ansicht springt in <strong id="idle-count">20</strong> Sekunden zurück zur Präsentation.</p>
+      <button class="btn btn-primary btn-lg" type="button" id="idle-stay">Ja, weitermachen</button>
+    </div>
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
