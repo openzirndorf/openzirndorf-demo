@@ -53,7 +53,7 @@ const SLIDES = [
       <div>
         <p class="eyebrow" data-step style="--d:0">OpenZirndorf e.V.</p>
         <h2 data-step style="--d:1">Digitale Möglichkeiten <span class="accent">für Zirndorf.</span></h2>
-        <p class="slide-lead" data-step style="--d:2">Ein ehrenamtlicher, überparteilicher Verein von Bürgerinnen und Bürgern, der kostenlose digitale Werkzeuge für die eigene Stadt baut.</p>
+        <p class="slide-lead" data-step style="--d:2">Ein ehrenamtlicher, überparteilicher Verein von Bürgerinnen und Bürgern, der digitale Werkzeuge für die eigene Stadt baut.</p>
       </div>
       <img src="assets/img/logo.png" alt="Logo von OpenZirndorf" data-step style="--d:1" />
     </div>` },
@@ -67,7 +67,7 @@ const SLIDES = [
         <div class="card" data-step style="--d:3"><div class="card-num">2026</div><h3>Gegründet</h3><p>Seit dem 6. August eingetragener Verein.</p></div>
         <div class="card" data-step style="--d:4"><div class="card-num">7</div><h3>Projekte</h3><p>Seit Anfang 2026 gestartet, von der Wahl bis zum Flohmarkt.</p></div>
         <div class="card" data-step style="--d:5"><div class="card-num">100&nbsp;%</div><h3>Ehrenamtlich</h3><p>Kein Unternehmen dahinter, kein Gewinninteresse.</p></div>
-        <div class="card" data-step style="--d:6"><div class="card-num">0&nbsp;€</div><h3>Kostenlos</h3><p>Alle Angebote sind frei nutzbar, für alle.</p></div>
+        <div class="card" data-step style="--d:6"><div class="card-num">0&nbsp;€</div><h3>Bisherige Kosten</h3><p>Alle bisherigen Apps und Aktionen waren für Bürgerinnen und Bürger frei nutzbar.</p></div>
       </div>
     </div>` },
 
@@ -104,7 +104,7 @@ const SLIDES = [
       <h2 data-step style="--d:1">Digitale Werkzeuge, die Zirndorf weiterbringen.</h2>
       <div class="cards cards-2">
         <div class="card" data-step style="--d:2"><div class="card-icon">${icon('eye')}</div><h3>Lokale Politik verständlich machen</h3><p>Informationen so aufbereiten, dass sie alle verstehen, nicht nur die, die sich schon auskennen.</p></div>
-        <div class="card" data-step style="--d:3"><div class="card-icon">${icon('tool')}</div><h3>Praktische Hilfe im Alltag</h3><p>Kostenlose Werkzeuge für Fragen, die sich hier jeden Tag stellen: unterwegs, beim Einkaufen, bei der Suche nach Hilfe.</p></div>
+        <div class="card" data-step style="--d:3"><div class="card-icon">${icon('tool')}</div><h3>Praktische Hilfe im Alltag</h3><p>Digitale Werkzeuge für Fragen, die sich hier jeden Tag stellen: unterwegs, beim Einkaufen, bei der Suche nach Hilfe.</p></div>
         <div class="card" data-step style="--d:4"><div class="card-icon">${icon('heart')}</div><h3>Gemeinschaft stärken</h3><p>Aktionen, die Menschen zusammenbringen, von der Stadtrallye bis zum Flohmarkt.</p></div>
         <div class="card" data-step style="--d:5"><div class="card-icon">${icon('book')}</div><h3>Wissen teilen</h3><p>Im OpenZirndorf-Workshop zeigen wir, wie digitale Werkzeuge entstehen, und wie du selbst mitmachen kannst.</p></div>
       </div>
@@ -118,7 +118,7 @@ const SLIDES = [
         <div class="card" data-step style="--d:2"><h3>Idee</h3><p>Vorschläge kommen aus der Ideenbörse, vom Stammtisch oder direkt aus der Nachbarschaft.</p></div>
         <div class="card" data-step style="--d:3"><h3>Gemeinsam planen</h3><p>Wir prüfen, was gebraucht wird und was mit vertretbarem Aufwand machbar ist.</p></div>
         <div class="card" data-step style="--d:4"><h3>Ehrenamtlich bauen</h3><p>Mitglieder entwickeln, testen und verbessern das Werkzeug in ihrer Freizeit.</p></div>
-        <div class="card" data-step style="--d:5"><h3>Offen bereitstellen</h3><p>Kostenlos für alle nutzbar, der Quellcode öffentlich einsehbar.</p></div>
+        <div class="card" data-step style="--d:5"><h3>Offen bereitstellen</h3><p>Für alle zugänglich, der Quellcode öffentlich einsehbar.</p></div>
       </div>
     </div>` },
 
@@ -129,7 +129,7 @@ const SLIDES = [
         <h2 data-step style="--d:1">Der OpenZirndorf-Workshop.</h2>
         <p class="slide-lead" data-step style="--d:2">Du willst sehen, wie unsere Projekte entstehen, oder selbst mitmachen? Melde unverbindlich dein Interesse an. Wir melden uns mit Termin und Details.</p>
         <ul class="bullets" data-step style="--d:3">
-          <li>Unverbindlich und kostenlos</li>
+          <li>Unverbindlich anmelden</li>
           <li>Keine Vorkenntnisse nötig</li>
         </ul>
       </div>
@@ -141,7 +141,7 @@ const SLIDES = [
       <div>
         <p class="eyebrow" data-step style="--d:0">Mitglied werden</p>
         <h2 data-step style="--d:1">Nicht nur nutzen, sondern mitbestimmen.</h2>
-        <p class="slide-lead" data-step style="--d:2">Dein Beitrag finanziert ehrenamtliche, kostenlose Projekte für ganz Zirndorf. Als ordentliches Mitglied hast du volles Stimmrecht in der Mitgliederversammlung.</p>
+        <p class="slide-lead" data-step style="--d:2">Dein Beitrag finanziert ehrenamtliche Projekte für ganz Zirndorf. Als ordentliches Mitglied hast du volles Stimmrecht in der Mitgliederversammlung.</p>
         <ul class="bullets" data-step style="--d:3">
           <li><span>Ordentliche Mitgliedschaft <strong>ab 24&nbsp;€ im Jahr</strong></span></li>
           <li><span>Fördermitgliedschaft <strong>ab 42&nbsp;€ im Jahr</strong>, für Vereine ab 50&nbsp;€, für Unternehmen ab 100&nbsp;€</span></li>
